@@ -11,7 +11,7 @@ const ListingItem = ({listing, id, onDelete }) => {
         to={`/category/${listing.type}/${id}`}
         className="categoryListingLink">
         <img
-          src={listing.imageUrls[1]}
+          src={listing.imgUrls[0]}
           alt={listing.name}
           className="categoryListingImg"
         />
@@ -46,7 +46,11 @@ const ListingItem = ({listing, id, onDelete }) => {
         </div>
       </Link>
       {onDelete && (
-        <DeleteIcon className='removeIcon' fill='rgb(231, 76, 60)' onClick={()=> onDelete(listing.id, listing.name)} />
+        <DeleteIcon
+          className="removeIcon"
+          fill="rgb(231, 76, 60)"
+          onClick={() => onDelete(listing.id, listing.name)}
+        />
       )}
     </li>
   );
