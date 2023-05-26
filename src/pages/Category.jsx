@@ -21,7 +21,7 @@ try {
     //get a refrence
     const listingsRef = collection(db,'listings')
     // create a query
-    const q = query(listingsRef, where('type', '==', params.categoryName), orderBy('timestamp', 'desc'), limit(10))
+    const q = query(listingsRef, where('type', '==', params.categoryName), orderBy('timestamp', 'desc'), limit(20))
     //exucute query
     const querySnap = await getDocs(q)
 
