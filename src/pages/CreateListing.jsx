@@ -12,7 +12,7 @@ import {
 } from "firebase/storage";
 import {db} from '../firebase.config'
 import {v4 as uuidv4} from 'uuid'
-import {addDoc, collection, serverTimestamp} from 'firebase/firestore'
+import { addDoc, collection, serverTimestamp} from 'firebase/firestore'
 
 
 const CreateListing = () => {
@@ -112,7 +112,7 @@ useEffect(()=>{
        const storage = getStorage();
        const fileName = `${auth.currentUser.uid}-${image.name}-${uuidv4()}`;
 
-       const storageRef = ref(storage, "images/" + fileName);
+       const storageRef = ref(storage, 'images/' + fileName);
 
        const uploadTask = uploadBytesResumable(storageRef, image);
 
@@ -129,6 +129,8 @@ useEffect(()=>{
              case "running":
                console.log("Upload is running");
                break;
+               default:
+                break
            }
          },
          (error) => {
@@ -168,7 +170,7 @@ delete formDataCopy.address
 
 !formDataCopy.offer && delete formDataCopy.discountedPrice
 
-const docRef = await addDoc(collection(db, 'listings'), formDataCopy);
+  const docRef = await addDoc(collection(db, "listings"), formDataCopy);
    setLoading(false);
    toast.success('Listing added')
    navigate(`/category/${formDataCopy.type}/${docRef.id}`)

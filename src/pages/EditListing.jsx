@@ -475,7 +475,7 @@ const EditListing = () => {
             required
           />
           <button type="submit" className="primaryButton createListingButton">
-            Edit Listing
+            Update Listing
           </button>
         </form>
       </main>

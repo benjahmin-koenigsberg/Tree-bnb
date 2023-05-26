@@ -47,6 +47,10 @@ const Slider = () => {
     return <></>;
   }
 
+  if(listings.length === 0){
+    return <></>
+  }
+
   return (
     listings && (
       <>
