@@ -8,8 +8,8 @@ const About = () => {
       </header>
       <main>
         <h3>
-          Unlike AirBnb and other onlike housing marketplace, all our profits go
-          directly to plant trees and restore forest habitats
+          Unlike other housing marketplace, our profits go
+          directly to plant trees and restore forests
         </h3>
         <p>
           Trees give off oxygen that we need to breathe. Trees reduce the amount
