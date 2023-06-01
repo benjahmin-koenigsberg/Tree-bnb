@@ -7,9 +7,14 @@ const About = () => {
         <p className="pageHeader">About Tree bnb</p>
       </header>
       <main>
+        <p>
+          Tree bnb is a marketplace app for treehouse owners to list their
+          treehouses for rent or sale and for others to explore availble
+          treehouses to visit or own!
+        </p>
         <h3>
-          Unlike other housing marketplace, our profits go
-          directly to plant trees and restore forests
+          Unlike other housing marketplace, our profits go directly to plant
+          trees and restore forests
         </h3>
         <p>
           Trees give off oxygen that we need to breathe. Trees reduce the amount
@@ -35,9 +40,19 @@ const About = () => {
           relive old memories or create new ones in a fun and creative way.
           Traveling with children? They’ll have an adventure of a lifetime.
         </p>
+        <h4>You can enjoy amazing vistas</h4>
+        <p>
+          Birds and trees are all around you as you start your day off. Staying
+          in a treehouse allows you to have a closer look at the forest without
+          worrying about encountering any dangerous creatures. Some are hidden
+          deep in the woods, while others are more accessible. Nevertheless,
+          breathtaking views are one of the many benefits of staying in a tree
+          house, no matter where you choose to stay.
+        </p>
       </main>
     </div>
   );
 }
 
 export default About
+
